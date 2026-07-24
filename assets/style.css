@@ -1,0 +1,316 @@
+/* ===== RESET E VARIÁVEIS GLOBAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CORES PRINCIPAIS ===== */
+:root {
+    --cor-primaria: #4CAF50;
+    --cor-primaria-escura: #45a049;
+    --cor-background: #f9f9f9;
+    --cor-texto: #555;
+    --cor-titulo: #333;
+    --cor-menu: #6c7a88;
+    --cor-footer: #333;
+    --cor-branco: #fff;
+    --cor-cinza-claro: #f0f0f0;
+}
+
+/* ===== HEADER BANNER ===== */
+.header-banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.titulo-principal {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: var(--cor-cinza-claro);
+}
+
+.titulo-principal h1 {
+    font-size: 2.5em;
+    color: var(--cor-titulo);
+    margin-bottom: 10px;
+}
+
+.titulo-principal h2 {
+    font-size: 1.3em;
+    color: #666;
+    font-weight: normal;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo-principal {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.conteudo-principal h3 {
+    font-size: 1.8em;
+    color: var(--cor-titulo);
+    margin-bottom: 20px;
+}
+
+.conteudo-principal p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.secao-sobre {
+    background-color: var(--cor-background);
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.secao-sobre h1 {
+    font-size: 2em;
+    color: var(--cor-titulo);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.secao-sobre p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== SEÇÃO HORÁRIOS ===== */
+.horario-atendimento h1 {
+    font-size: 2em;
+    color: var(--cor-titulo);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.horario-atendimento p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== TABELA ===== */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: var(--cor-branco);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: var(--cor-primaria);
+}
+
+table th {
+    padding: 15px;
+    text-align: left;
+    color: var(--cor-branco);
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    color: var(--cor-texto);
+}
+
+table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--cor-background);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--cor-footer);
+    color: var(--cor-branco);
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: var(--cor-primaria);
+}
+
+.footer-section p {
+    font-size: 0.95em;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--cor-branco);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* ===== REDES SOCIAIS ===== */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: var(--cor-branco);
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+/* ===== MENU LATERAL ===== */
+.menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--cor-menu);
+    padding: 30px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.menu-lateral-logo {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.menu-lateral-logo h2 {
+    color: var(--cor-branco);
+    font-size: 1.3em;
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral ul li {
+    margin: 0;
+}
+
+.menu-lateral ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+    font-size: 1em;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #34495e;
+    border-left-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    padding-left: 30px;
+}
+
+.menu-lateral ul li a.ativo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border-left-color: var(--cor-primaria-escura);
+}
+
+/* ===== BODY COM MENU LATERAL ===== */
+body {
+    margin-left: 250px;
+}
+
+/* ===== BOTÃO MENU MOBILE ===== */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+/* ===== RESPONSIVO - MOBILE ===== */
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 200px;
+        left: -200px;
+        transition: left 0.3s;
+    }
+
+    .menu-lateral.ativo {
+        left: 0;
+    }
+
+    body {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

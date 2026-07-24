@@ -1,0 +1,293 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header-banner {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .header-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .titulo-principal {
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .titulo-principal h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .titulo-principal h2 {
+            font-size: 1.3em;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .conteudo-principal {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .conteudo-principal h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .conteudo-principal p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .secao-sobre {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+
+        .secao-sobre h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .secao-sobre p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .horario-atendimento h1{
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .horario-atendimento p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        table thead {
+            background-color: #4CAF50;
+        }
+
+        table th {
+            padding: 15px;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+
+        table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            color: #555;
+        }
+
+        table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .footer-section p {
+            font-size: 0.95em;
+            line-height: 1.8;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #555;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #45a049;
+        }
+
+        /* Menu Lateral */
+        .menu-lateral {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background-color: #2c3e50;
+            padding: 30px 0;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .menu-lateral-logo {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .menu-lateral-logo h2 {
+            color: #fff;
+            font-size: 1.3em;
+        }
+
+        .menu-lateral ul {
+            list-style: none;
+        }
+
+        .menu-lateral ul li {
+            margin: 0;
+        }
+
+        .menu-lateral ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+            font-size: 1em;
+        }
+
+        .menu-lateral ul li a:hover {
+            background-color: #34495e;
+            border-left-color: #4CAF50;
+            color: #4CAF50;
+            padding-left: 30px;
+        }
+
+        .menu-lateral ul li a.ativo {
+            background-color: #4CAF50;
+            color: #fff;
+            border-left-color: #45a049;
+        }
+
+        /* Ajuste do body para acomodar menu lateral */
+        body {
+            margin-left: 250px;
+        }
+
+        /* Botão para fechar menu em mobile */
+        .menu-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.5em;
+            cursor: pointer;
+            z-index: 1001;
+            border-radius: 5px;
+        }
+
+        /* Responsivo para mobile */
+        @media (max-width: 768px) {
+            .menu-lateral {
+                width: 200px;
+                left: -200px;
+                transition: left 0.3s;
+            }
+
+            .menu-lateral.ativo {
+                left: 0;
+            }
+
+            body {
+                margin-left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
